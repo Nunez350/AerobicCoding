@@ -1,4 +1,5 @@
-//This is an example of runtime polymorphism 
+//This is an example of runtime polymorphism. 
+//What makes it an a case of polymorphism is that we are calling the same method inherited in class B from C but using it a different way.
 class Week1 {
     public class C {
         void method1 (){
