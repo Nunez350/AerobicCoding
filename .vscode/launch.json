@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Omron",
+            "request": "launch",
+            "mainClass": "Omron"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - StringFlip",
             "request": "launch",
             "mainClass": "StringFlip"
