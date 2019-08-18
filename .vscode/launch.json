@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - OverloadedConstructors",
+            "request": "launch",
+            "mainClass": "OverloadedConstructors"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StudentData",
+            "request": "launch",
+            "mainClass": "StudentData"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Omron",
             "request": "launch",
             "mainClass": "Omron"
