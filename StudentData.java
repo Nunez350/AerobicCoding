@@ -39,8 +39,8 @@ class StudentData{
        //This object creation would call the default constructor
        StudentData myobj = new StudentData();
 
-      // myobj.stuAge;
-      
+      // myobj.stuAge;   //how can I acess this
+
        //System.out.println(myobj.stuID());
        System.out.println("Student Name is: "+myobj.getStuName());
     //    System.out.println("Student Age is: "+myobj.getStuAge());
@@ -49,6 +49,7 @@ class StudentData{
        /*This object creation would call the parameterized
         * constructor StudentData(int, String, int)*/
        StudentData myobj2 = new StudentData(555, "Chaitanya", 25);
+       System.out.println("Student Name is: "+myobj2.getStuName());
     //    System.out.println("Student Name is: "+myobj2.getStuName());
     //    System.out.println("Student Age is: "+myobj2.getStuAge());
     //    System.out.println("Student ID is: "+myobj2.getStuID()); 

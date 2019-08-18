@@ -1,3 +1,4 @@
+
 /*Write a program with the following classes:
     - Student
     - GraduateStudent
@@ -20,9 +21,11 @@ Student u2 is an undergraduate student
 */
 class Student {
     protected String id = " ";
-    void generateID(int a) {
-        id =a;
+
+    void generateID(int str) {
+        this.id = str;
     }
+
     /**
      * @return the id
      */
@@ -31,36 +34,33 @@ class Student {
     }
 }
 
-class GraduateStudent extends Student{
-    void generateID(int a) {
-        this.id ="g"+ a;
+class GraduateStudent extends Student {
+    void generateID(int str) {
+        this.id = "g" + str;
     }
 }
 
-class UndergraduateStudent extends Student{
-    void generateID(int a) {
-        this.id = "u"+a;
+class UndergraduateStudent extends Student {
+    void generateID(int str) {
+        this.id = "u" + str;
     }
 }
-class Lee{
-    public static void main(String args[]){
+
+class Lee2 {
+    public static void main(String args[]) {
         Student[] arr = new Student[3];
-        arr[0]= new UndergraduateStudent();
-        arr[1]= new GraduateStudent();
-        arr[2]= new UndergraduateStudent();
-        //     Student obj= new Student();
-    for ( int i =0; i < arr.length; i++){
-         arr[i].generateID(i);
-         //System.out.println(arr[i]);//how do you print our the elements
+        arr[0] = new UndergraduateStudent();
+        arr[1] = new GraduateStudent();
+        arr[2] = new UndergraduateStudent();
+        for (int i = 0; i < arr.length; i++) {
+            arr[i].generateID(i);
         }
-        for (Student s : arr) {
-          //  System.out.print("Student " + s.getID() + " is an ");
-            if (s instanceof UndergraduateStudent) {
-                System.out.println("undergraduate student");
-            }
-            else {
-                System.out.println("graduate student");
-            }
-        }
+        for( Student st : arr){
+            System.out.print("Student " + st.getID() + " is an ");//how can i get this id
+           if (st instanceof UndergraduateStudent ){
+               System.out.println("Unde");
+           }
+         // System.out.print("Student " + s.getID() + " is an ");
+        }//s ID and their student status.
     }
 }
