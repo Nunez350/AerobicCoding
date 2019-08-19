@@ -56,7 +56,8 @@ class Lee2 {
             arr[i].generateID(i);
         }
         for( Student st : arr){
-            System.out.print("Student " + st.getID() + " is an ");//how can i get this id
+            
+            System.out.print("Student " + st.getId() + " is an ");//how can i get this id
            if (st instanceof UndergraduateStudent ){
                System.out.println("Unde");
            }

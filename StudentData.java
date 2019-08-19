@@ -1,7 +1,7 @@
 class StudentData{
    private int stuID;
    private String stuName;
-   private int stuAge;
+   private  int stuAge;
    StudentData() {
        //Default constructor
        stuID = 100;
@@ -39,7 +39,8 @@ class StudentData{
        //This object creation would call the default constructor
        StudentData myobj = new StudentData();
 
-      // myobj.stuAge;   //how can I acess this
+        myobj.stuAge = 20;   //how can I acess this
+        //System.out.println(test);
 
        //System.out.println(myobj.stuID());
        System.out.println("Student Name is: "+myobj.getStuName());
