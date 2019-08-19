@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - GregAerobic",
+            "request": "launch",
+            "mainClass": "GregAerobic"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Lee2",
             "request": "launch",
             "mainClass": "Lee2"
